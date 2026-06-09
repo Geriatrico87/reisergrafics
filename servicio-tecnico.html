@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio de asistencia técnica SAT para maquinaria de artes gráficas. Respuesta en 24 horas. Diagnóstico mecánico y electrónico multimarca. Mantenimiento preventivo y correctivo.">
+    <meta name="robots" content="index, follow">
+    <title>Servicio de Asistencia Técnica (SAT) — Reiser Grafics S.L.</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230056B3'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold' font-size='18'>RG</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="Reiser Grafics — Inicio">
+                <svg class="header__logo-svg" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7" cy="8" r="4" fill="#D32F2F"/>
+                    <circle cx="7" cy="20" r="4" fill="#D32F2F"/>
+                    <circle cx="7" cy="32" r="4" fill="#D32F2F"/>
+                    <text x="20" y="25" fill="#222222" font-family="Montserrat,sans-serif" font-weight="800" font-size="22" letter-spacing="0.5">REISER</text>
+                    <text x="20" y="41" fill="#888B97" font-family="Montserrat,sans-serif" font-weight="700" font-size="12" letter-spacing="3">GRAFICS</text>
+                </svg>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <a href="compra-venta.html" class="header__nav-link">Maquinaria</a>
+                <a href="servicio-tecnico.html" class="header__nav-link">Servicio Técnico</a>
+                <a href="recambios.html" class="header__nav-link">Recambios</a>
+                <a href="empresa.html" class="header__nav-link">Empresa</a>
+            </nav>
+            <div class="header__actions">
+                <a href="tel:+34619293935" class="btn btn-danger btn-sm header__cta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>Llamar Asistencia 24/7</span>
+                </a>
+                <button class="header__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__backdrop"></div>
+        <div class="mobile-menu__panel">
+            <nav class="mobile-menu__nav">
+                <a href="compra-venta.html" class="mobile-menu__link">Maquinaria</a>
+                <a href="servicio-tecnico.html" class="mobile-menu__link">Servicio Técnico</a>
+                <a href="recambios.html" class="mobile-menu__link">Recambios</a>
+                <a href="empresa.html" class="mobile-menu__link">Empresa</a>
+            </nav>
+            <div class="mobile-menu__contact">
+                <a href="tel:+34619293935" class="btn btn-danger btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Urgencias 24/7</a>
+                <a href="tel:+34937151691" class="btn btn-secondary--dark btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Oficina: 93 715 16 91</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="index.html">Inicio</a> → <span>Servicio Técnico</span></nav>
+                <h1>Servicio de Asistencia Técnica (SAT)</h1>
+                <p class="text-lead">Compromiso de respuesta en 24 horas. Diagnóstico mecánico y electrónico multimarca para su línea de producción.</p>
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content section">
+            <div class="container">
+
+                <!-- 1. Asistencia técnica integral -->
+                <div class="animate-on-scroll">
+                    <h2>Asistencia técnica integral</h2>
+                    <p>El Servicio de Asistencia Técnica de Reiser Grafics está diseñado para minimizar los tiempos de parada de su línea de producción. Nuestro compromiso es claro: respuesta en menos de 24 horas desde la recepción de su aviso, con desplazamiento de técnicos especializados a cualquier punto de la Península Ibérica.</p>
+                    <p>Disponemos de un equipo de ingenieros con formación específica en mecánica de precisión, electrónica industrial y automatización. Nuestros técnicos están capacitados para realizar diagnósticos avanzados utilizando equipos de medición calibrados: comparadores centesimales, alineadores láser, analizadores de vibraciones y osciloscopios para diagnóstico electrónico.</p>
+
+                    <h3>Tipos de mantenimiento</h3>
+                    <p>Ofrecemos tres modalidades de servicio adaptadas a las necesidades de cada cliente:</p>
+                    <ul>
+                        <li><strong>Mantenimiento correctivo:</strong> Intervención rápida ante averías imprevistas. Diagnóstico in situ, reparación inmediata o planificación de la intervención con mínimo impacto en producción.</li>
+                        <li><strong>Mantenimiento preventivo:</strong> Planes periódicos de inspección y sustitución de componentes según horas de funcionamiento. Reducción de hasta un 70% en paradas imprevistas.</li>
+                        <li><strong>Mantenimiento predictivo:</strong> Monitorización de parámetros críticos (vibraciones, temperaturas, consumos eléctricos) para anticipar fallos antes de que se produzcan.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Stats -->
+                <div class="stats-row animate-on-scroll">
+                    <div class="stat">
+                        <span class="stat__number">24h</span>
+                        <span class="stat__label">Tiempo de respuesta</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">+1.000</span>
+                        <span class="stat__label">Intervenciones realizadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">Multi</span>
+                        <span class="stat__label">Multimarca</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">100%</span>
+                        <span class="stat__label">Garantía en reparaciones</span>
+                    </div>
+                </div>
+
+                <!-- 3. Especialidades técnicas -->
+                <div class="animate-on-scroll">
+                    <h2>Especialidades técnicas</h2>
+                    <p>Nuestro equipo cubre todas las disciplinas necesarias para el mantenimiento integral de maquinaria de artes gráficas y transformación.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-box animate-on-scroll">
+                        <h3>Calibración electrónica</h3>
+                        <p>Ajuste y programación de sistemas de registro automático, calibración de sensores inductivos y capacitivos, programación de PLCs (Siemens, Allen-Bradley, Omron), configuración de variadores de frecuencia y servoaccionamientos. Diagnóstico de buses de comunicación (Profibus, Profinet, EtherCAT) y actualización de software de control.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Mecánica de precisión</h3>
+                        <p>Sustitución de rodamientos de cilindros de impresión y transferencia, rectificado de cilindros y ejes, alineación de ejes mediante láser, verificación de presión de pinzas y ajuste de levas. Reparación de sistemas de transmisión: engranajes, correas dentadas, cadenas de precisión y acoplamientos.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Sistemas de entintado</h3>
+                        <p>Calibración colorimétrica y densitométrica, ajuste de tinteros automáticos (CPC, Technotrans), revisión del estado de rodillos entintadores y mojadores. Verificación de dureza Shore, concentricidad y acabado superficial. Ajuste del equilibrio agua-tinta y optimización del sistema de mojado.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Control de tensión</h3>
+                        <p>Diagnóstico y reparación de sistemas de control de tensión de bobina: frenos magnéticos de partículas, embragues electromagnéticos, células de carga y bailarines. Calibración de sistemas de vacío de aspiración, ventosas y bombas de vacío. Ajuste de sistemas de guiado de banda y corrección lateral.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Marcas que atendemos -->
+                <div class="animate-on-scroll">
+                    <h2>Marcas que atendemos</h2>
+                    <p>Nuestro servicio técnico es multimarca. Contamos con experiencia acreditada en las principales marcas del sector de artes gráficas y transformación:</p>
+                    <ul>
+                        <li><strong>Impresión offset:</strong> Heidelberg, Komori, KBA (Koenig & Bauer), MAN Roland, Ryobi, Sakurai</li>
+                        <li><strong>Post-prensa:</strong> MBO, Stahl, Polar, Schneider Senator, Müller Martini, Kolbus, Horizon</li>
+                        <li><strong>Flexografía y converting:</strong> Bobst, Windmöller & Hölscher, PCMC, Comexi, Fischer & Krecke</li>
+                        <li><strong>Acabado y manipulado:</strong> Heidelberg Stahlfolder, Theisen & Bonitz, GUK, Hunkeler</li>
+                    </ul>
+                    <p>Si su marca no aparece en la lista, consúltenos. Nuestros ingenieros tienen la capacidad de diagnosticar y reparar maquinaria de cualquier fabricante gracias a su formación transversal en mecánica, electrónica e hidráulica industrial.</p>
+                </div>
+
+                <!-- 5. Mantenimiento preventivo -->
+                <div class="animate-on-scroll">
+                    <h2>Mantenimiento preventivo</h2>
+                    <p>Un plan de mantenimiento preventivo bien diseñado es la inversión más rentable para cualquier impresor. Nuestros planes de mantenimiento están estructurados según las horas de funcionamiento de la máquina y las recomendaciones del fabricante, adaptados siempre a la realidad productiva de cada taller.</p>
+                    <p>Los beneficios de un programa de mantenimiento preventivo con Reiser Grafics incluyen:</p>
+                    <ul>
+                        <li>Reducción de hasta un 70% en paradas imprevistas de producción</li>
+                        <li>Extensión de la vida útil de componentes críticos: rodamientos, rodillos, engranajes</li>
+                        <li>Detección temprana de desgaste en cojinetes, rodillos y sistemas de transmisión</li>
+                        <li>Optimización del consumo energético y de consumibles (tinta, barniz, mantillas)</li>
+                        <li>Informe periódico del estado de la máquina con recomendaciones de actuación</li>
+                        <li>Prioridad en la atención de urgencias y acceso preferente a recambios</li>
+                    </ul>
+                    <p>Cada plan incluye visitas programadas de nuestros técnicos, con un checklist exhaustivo de puntos de inspección adaptado a cada modelo de máquina. Contacte con nosotros para diseñar un plan a medida de sus necesidades.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Block -->
+        <section class="cta-block">
+            <div class="container">
+                <div class="cta-block__content animate-on-scroll">
+                    <h2>Hable con un ingeniero hoy mismo</h2>
+                    <p class="text-lead">Nuestro equipo de expertos en ingeniería mecánica y electrónica está a su disposición.</p>
+                    <div class="cta-block__buttons">
+                        <a href="tel:+34937151691" class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Llamar ahora
+                        </a>
+                        <a href="mailto:jamartinez@reisergrafics.es" class="btn btn-secondary--dark btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Enviar Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div>
+                        <svg class="footer__logo-svg" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="8" r="4" fill="#D32F2F"/>
+                            <circle cx="7" cy="20" r="4" fill="#D32F2F"/>
+                            <circle cx="7" cy="32" r="4" fill="#D32F2F"/>
+                            <text x="20" y="25" fill="#FFFFFF" font-family="Montserrat,sans-serif" font-weight="800" font-size="22" letter-spacing="0.5">REISER</text>
+                            <text x="20" y="41" fill="rgba(255,255,255,0.5)" font-family="Montserrat,sans-serif" font-weight="700" font-size="12" letter-spacing="3">GRAFICS</text>
+                        </svg>
+                        <p class="footer__address">P.I. Can Clapers, Pla de la Falguera 6<br>08181 Sentmenat (Barcelona)</p>
+                    </div>
+                    <div class="footer__contact-row">
+                        <a href="tel:+34937151691" class="footer__contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 93.715.16.91</a>
+                        <a href="tel:+34619293935" class="footer__contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> 619.29.39.35</a>
+                        <a href="mailto:jamartinez@reisergrafics.es" class="footer__email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> jamartinez@reisergrafics.es</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 Reiser Grafics S.L. Todos los derechos reservados.</p>
+                    <div class="footer__legal">
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                        <a href="privacidad.html">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

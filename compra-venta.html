@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra y venta de maquinaria industrial de artes gráficas. Intermediación profesional, maquinaria usada y reacondicionada. Heidelberg, Komori, KBA, MBO, Polar.">
+    <meta name="robots" content="index, follow">
+    <title>Compra y Venta de Maquinaria Industrial — Reiser Grafics S.L.</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230056B3'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold' font-size='18'>RG</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="Reiser Grafics — Inicio">
+                <svg class="header__logo-svg" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7" cy="8" r="4" fill="#D32F2F"/>
+                    <circle cx="7" cy="20" r="4" fill="#D32F2F"/>
+                    <circle cx="7" cy="32" r="4" fill="#D32F2F"/>
+                    <text x="20" y="25" fill="#222222" font-family="Montserrat,sans-serif" font-weight="800" font-size="22" letter-spacing="0.5">REISER</text>
+                    <text x="20" y="41" fill="#888B97" font-family="Montserrat,sans-serif" font-weight="700" font-size="12" letter-spacing="3">GRAFICS</text>
+                </svg>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <a href="compra-venta.html" class="header__nav-link">Maquinaria</a>
+                <a href="servicio-tecnico.html" class="header__nav-link">Servicio Técnico</a>
+                <a href="recambios.html" class="header__nav-link">Recambios</a>
+                <a href="empresa.html" class="header__nav-link">Empresa</a>
+            </nav>
+            <div class="header__actions">
+                <a href="tel:+34619293935" class="btn btn-danger btn-sm header__cta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>Llamar Asistencia 24/7</span>
+                </a>
+                <button class="header__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__backdrop"></div>
+        <div class="mobile-menu__panel">
+            <nav class="mobile-menu__nav">
+                <a href="compra-venta.html" class="mobile-menu__link">Maquinaria</a>
+                <a href="servicio-tecnico.html" class="mobile-menu__link">Servicio Técnico</a>
+                <a href="recambios.html" class="mobile-menu__link">Recambios</a>
+                <a href="empresa.html" class="mobile-menu__link">Empresa</a>
+            </nav>
+            <div class="mobile-menu__contact">
+                <a href="tel:+34619293935" class="btn btn-danger btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Urgencias 24/7</a>
+                <a href="tel:+34937151691" class="btn btn-secondary--dark btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Oficina: 93 715 16 91</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="index.html">Inicio</a> → <span>Compra y Venta</span></nav>
+                <h1>Compra y Venta de Maquinaria Industrial</h1>
+                <p class="text-lead">Intermediación profesional y asesoramiento experto en maquinaria de artes gráficas usada y reacondicionada.</p>
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content section">
+            <div class="container">
+
+                <!-- 1. Nuestro servicio de intermediación -->
+                <div class="animate-on-scroll">
+                    <h2>Nuestro servicio de intermediación</h2>
+                    <p>Con más de 25 años de experiencia en el sector de las artes gráficas, Reiser Grafics ofrece un servicio integral de intermediación en la compra y venta de maquinaria industrial. Nuestro profundo conocimiento del mercado nos permite asesorar a nuestros clientes tanto en la adquisición como en la venta de equipos, garantizando siempre las mejores condiciones.</p>
+                    <p>Cada máquina que gestionamos pasa por un riguroso proceso de evaluación técnica. Nuestros ingenieros inspeccionan el estado de los rodillos entintadores, verifican el desgaste de cojinetes, comprueban la geometría de cilindros y validan el ajuste de registros. Solo así podemos ofrecer una valoración precisa y transparente del equipo.</p>
+                    <p>Trabajamos con una amplia red de contactos en toda Europa, lo que nos permite localizar la maquinaria que nuestros clientes necesitan o encontrar compradores cualificados para sus equipos. Nuestra reputación en el sector es nuestra mejor carta de presentación.</p>
+                </div>
+
+                <!-- 2. Stats -->
+                <div class="stats-row animate-on-scroll">
+                    <div class="stat">
+                        <span class="stat__number">+25</span>
+                        <span class="stat__label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">+200</span>
+                        <span class="stat__label">Máquinas gestionadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">Multi</span>
+                        <span class="stat__label">Multimarca</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">100%</span>
+                        <span class="stat__label">Garantía post-venta</span>
+                    </div>
+                </div>
+
+                <!-- 3. Tipos de maquinaria -->
+                <div class="animate-on-scroll">
+                    <h2>Tipos de maquinaria</h2>
+                    <p>Gestionamos una amplia gama de maquinaria industrial para el sector gráfico y de transformación. Nuestro catálogo abarca desde equipos de impresión offset hasta líneas completas de post-prensa y acabado.</p>
+
+                    <h3>Impresión Offset</h3>
+                    <p>Máquinas de las principales marcas del mercado: Heidelberg (Speedmaster, GTO, SM), Komori (Lithrone, Sprint), KBA (Rapida). Equipos de 1 a 8 colores, formato desde 36×52 hasta 72×102 cm, con o sin volteo. Evaluamos el estado del tren de rodillos, la precisión de los registros y la integridad del sistema de entintado.</p>
+
+                    <h3>Flexografía</h3>
+                    <p>Impresoras flexográficas de tambor central y en línea, con anchos de banda desde 300 mm hasta 1.600 mm. Sistemas de secado UV e IR, control de tensión de banda y registros automáticos. Marcas como Bobst, Windmöller & Hölscher, PCMC y Comexi.</p>
+
+                    <h3>Post-prensa y acabado</h3>
+                    <ul>
+                        <li>Guillotinas programables: Polar, Schneider Senator, Perfecta</li>
+                        <li>Plegadoras: MBO, Stahl, Heidelberg Stahlfolder</li>
+                        <li>Encuadernadoras: Müller Martini, Kolbus, Horizon</li>
+                        <li>Alzadoras, cosedoras de alambre y líneas de packaging</li>
+                    </ul>
+
+                    <h3>Maquinaria de transformación</h3>
+                    <p>Troqueladoras, laminadoras, cortadoras-rebobinadoras, encoladoras y equipos de manipulado. Soluciones para la industria del cartón ondulado, embalaje flexible y etiquetas.</p>
+                </div>
+
+                <!-- 4. Proceso de compra -->
+                <div class="animate-on-scroll">
+                    <h2>Proceso de compra</h2>
+                    <p>Hemos diseñado un proceso estructurado para que la adquisición de maquinaria usada sea segura y transparente.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-box animate-on-scroll">
+                        <h3>Evaluación técnica</h3>
+                        <p>Inspección in situ por nuestros ingenieros. Revisamos el estado mecánico general, la precisión de los registros, el estado de los rodillos entintadores, el desgaste de cojinetes principales y la geometría de los cilindros de impresión. Elaboramos un informe técnico detallado con fotografías y mediciones.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Valoración de mercado</h3>
+                        <p>Determinamos el valor justo del equipo basándonos en su estado técnico, año de fabricación, horas de funcionamiento, historial de mantenimiento y cotización actual en el mercado europeo. Proporcionamos una valoración objetiva respaldada por datos reales.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Logística y transporte</h3>
+                        <p>Coordinamos el desmontaje, embalaje y transporte de la maquinaria. Contamos con equipos de elevación, grúas y plataformas especializadas. Gestionamos toda la documentación aduanera en operaciones internacionales y disponemos de almacenamiento temporal en nuestras instalaciones.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Puesta en marcha</h3>
+                        <p>Nuestro equipo técnico se encarga del montaje, nivelación, conexión eléctrica y neumática, calibración y pruebas de funcionamiento. Verificamos la calidad de impresión, el ajuste de registros y la correcta operación de todos los automatismos antes de dar la conformidad final.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Maquinaria de ocasión -->
+                <div class="animate-on-scroll">
+                    <h2>Maquinaria de ocasión</h2>
+                    <p>Toda la maquinaria de segunda mano que comercializamos pasa por un exhaustivo proceso de inspección y, cuando es necesario, reacondicionamiento. Nuestros técnicos realizan una revisión integral que incluye:</p>
+                    <ul>
+                        <li>Inspección del estado de los rodillos entintadores y mojadores: dureza Shore, concentricidad y superficie</li>
+                        <li>Medición de holguras en cojinetes de cilindros de impresión, transferencia y contrapresión</li>
+                        <li>Verificación de la geometría y paralelismo de cilindros mediante comparadores centesimales</li>
+                        <li>Comprobación del sistema de registro: levas, excéntricas, servomotores y encoders</li>
+                        <li>Revisión del sistema eléctrico: estado de variadores de frecuencia, PLCs, pantallas de operador</li>
+                        <li>Prueba de funcionamiento con papel y tinta para validar la calidad de impresión real</li>
+                    </ul>
+                    <p>El comprador recibe un informe técnico completo con el resultado de todas las inspecciones, fotografías del estado actual y, en su caso, las reparaciones realizadas. Ofrecemos garantía post-venta en todas nuestras operaciones.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Block -->
+        <section class="cta-block">
+            <div class="container">
+                <div class="cta-block__content animate-on-scroll">
+                    <h2>Hable con un ingeniero hoy mismo</h2>
+                    <p class="text-lead">Nuestro equipo de expertos en ingeniería mecánica y electrónica está a su disposición.</p>
+                    <div class="cta-block__buttons">
+                        <a href="tel:+34937151691" class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Llamar ahora
+                        </a>
+                        <a href="mailto:jamartinez@reisergrafics.es" class="btn btn-secondary--dark btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Enviar Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div>
+                        <svg class="footer__logo-svg" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="8" r="4" fill="#D32F2F"/>
+                            <circle cx="7" cy="20" r="4" fill="#D32F2F"/>
+                            <circle cx="7" cy="32" r="4" fill="#D32F2F"/>
+                            <text x="20" y="25" fill="#FFFFFF" font-family="Montserrat,sans-serif" font-weight="800" font-size="22" letter-spacing="0.5">REISER</text>
+                            <text x="20" y="41" fill="rgba(255,255,255,0.5)" font-family="Montserrat,sans-serif" font-weight="700" font-size="12" letter-spacing="3">GRAFICS</text>
+                        </svg>
+                        <p class="footer__address">P.I. Can Clapers, Pla de la Falguera 6<br>08181 Sentmenat (Barcelona)</p>
+                    </div>
+                    <div class="footer__contact-row">
+                        <a href="tel:+34937151691" class="footer__contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 93.715.16.91</a>
+                        <a href="tel:+34619293935" class="footer__contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> 619.29.39.35</a>
+                        <a href="mailto:jamartinez@reisergrafics.es" class="footer__email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> jamartinez@reisergrafics.es</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 Reiser Grafics S.L. Todos los derechos reservados.</p>
+                    <div class="footer__legal">
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                        <a href="privacidad.html">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

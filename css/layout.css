@@ -1,0 +1,247 @@
+/* ============================================================
+   REISER GRAFICS — Layout System (layout.css)
+   Mobile-first breakpoints: sm 640px, md 768px, lg 1024px
+   ============================================================ */
+
+/* ── Container ──────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.container--narrow {
+  max-width: 960px;
+}
+
+.container--wide {
+  max-width: 1440px;
+}
+
+/* ── Section ────────────────────────────────────────────────── */
+.section {
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.section--sm {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section--lg {
+  padding-block: clamp(5rem, 10vw, 9rem);
+}
+
+.section--no-top {
+  padding-top: 0;
+}
+
+.section--no-bottom {
+  padding-bottom: 0;
+}
+
+/* ── Grid System ────────────────────────────────────────────── */
+.grid {
+  display: grid;
+}
+
+/* 2 Column Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+/* 3 Column Grid */
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+/* 4 Column Grid */
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 6 Cards Grid (3×2 desktop, 2×3 tablet, 1 col mobile) */
+.grid-6-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .grid-6-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-6-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+/* Content + Sidebar (asymmetric) */
+.grid-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .grid-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* ── Flex Utilities ─────────────────────────────────────────── */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* ── Gap Utilities ──────────────────────────────────────────── */
+.gap-xs {
+  gap: var(--space-1);
+}
+
+.gap-sm {
+  gap: 1rem;
+}
+
+.gap-md {
+  gap: 2rem;
+}
+
+.gap-lg {
+  gap: 3rem;
+}
+
+.gap-xl {
+  gap: 4rem;
+}
+
+/* ── Spacing Utilities ──────────────────────────────────────── */
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+/* ── Width Constraints ──────────────────────────────────────── */
+.mx-auto {
+  margin-inline: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-prose {
+  max-width: 65ch;
+}
+
+.max-w-md {
+  max-width: 700px;
+}
+
+.max-w-lg {
+  max-width: 960px;
+}
+
+/* ── Position Helpers ───────────────────────────────────────── */
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

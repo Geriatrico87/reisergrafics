@@ -1,0 +1,301 @@
+/* ============================================================
+   REISER GRAFICS — Animations (animations.css)
+   Keyframes, Scroll Animations, Reduced Motion
+   ============================================================ */
+
+/* ════════════════════════════════════════════════════════════
+   KEYFRAMES
+   ════════════════════════════════════════════════════════════ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(211, 47, 47, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(211, 47, 47, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SCROLL-TRIGGERED ANIMATION CLASSES
+   ════════════════════════════════════════════════════════════ */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out,
+              transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* ── Directional Variants ───────────────────────────────────── */
+.animate-on-scroll.from-left {
+  transform: translateX(-30px);
+}
+
+.animate-on-scroll.from-right {
+  transform: translateX(30px);
+}
+
+.animate-on-scroll.scale-in {
+  transform: scale(0.9);
+}
+
+.animate-on-scroll.from-left.is-visible,
+.animate-on-scroll.from-right.is-visible {
+  transform: translateX(0);
+}
+
+.animate-on-scroll.scale-in.is-visible {
+  transform: scale(1);
+}
+
+/* ── Stagger Delays ─────────────────────────────────────────── */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+.stagger-6 { transition-delay: 0.6s; }
+
+
+/* ════════════════════════════════════════════════════════════
+   UTILITY ANIMATION CLASSES
+   ════════════════════════════════════════════════════════════ */
+
+/* Shimmer loading effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--gray-light) 25%,
+    var(--gray-mid) 50%,
+    var(--gray-light) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Float animation */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse animation */
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Spin animation */
+.animate-spin {
+  animation: rotate 1s linear infinite;
+}
+
+/* Fade in on load */
+.fade-in {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.fade-in-delay-1 {
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.fade-in-delay-2 {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.fade-in-delay-3 {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.fade-in-delay-4 {
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   HOVER TRANSITIONS (GLOBAL ENHANCEMENTS)
+   ════════════════════════════════════════════════════════════ */
+
+/* Smooth image zoom on hover */
+.hover-zoom {
+  overflow: hidden;
+}
+
+.hover-zoom img {
+  transition: transform var(--transition-slow);
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Lift on hover */
+.hover-lift {
+  transition: transform var(--transition-base),
+              box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   REDUCED MOTION
+   Respects user accessibility preferences
+   ════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .marquee__track {
+    animation: none;
+  }
+
+  .hero__badge {
+    animation: none;
+  }
+
+  .animate-float,
+  .animate-pulse,
+  .animate-spin {
+    animation: none;
+  }
+
+  .hover-zoom:hover img {
+    transform: none;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+}

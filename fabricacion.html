@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fabricación de maquinaria industrial a medida. Serie RG 200 superponedor de papel para prospectos farmacéuticos. Mecanizado CNC, soldadura TIG, montaje eléctrico.">
+    <meta name="robots" content="index, follow">
+    <title>Fabricación de Maquinaria a Medida — Reiser Grafics S.L.</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230056B3'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold' font-size='18'>RG</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="Reiser Grafics — Inicio">
+                <svg class="header__logo-svg" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7" cy="8" r="4" fill="#D32F2F"/>
+                    <circle cx="7" cy="20" r="4" fill="#D32F2F"/>
+                    <circle cx="7" cy="32" r="4" fill="#D32F2F"/>
+                    <text x="20" y="25" fill="#222222" font-family="Montserrat,sans-serif" font-weight="800" font-size="22" letter-spacing="0.5">REISER</text>
+                    <text x="20" y="41" fill="#888B97" font-family="Montserrat,sans-serif" font-weight="700" font-size="12" letter-spacing="3">GRAFICS</text>
+                </svg>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <a href="compra-venta.html" class="header__nav-link">Maquinaria</a>
+                <a href="servicio-tecnico.html" class="header__nav-link">Servicio Técnico</a>
+                <a href="recambios.html" class="header__nav-link">Recambios</a>
+                <a href="empresa.html" class="header__nav-link">Empresa</a>
+            </nav>
+            <div class="header__actions">
+                <a href="tel:+34619293935" class="btn btn-danger btn-sm header__cta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>Llamar Asistencia 24/7</span>
+                </a>
+                <button class="header__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__backdrop"></div>
+        <div class="mobile-menu__panel">
+            <nav class="mobile-menu__nav">
+                <a href="compra-venta.html" class="mobile-menu__link">Maquinaria</a>
+                <a href="servicio-tecnico.html" class="mobile-menu__link">Servicio Técnico</a>
+                <a href="recambios.html" class="mobile-menu__link">Recambios</a>
+                <a href="empresa.html" class="mobile-menu__link">Empresa</a>
+            </nav>
+            <div class="mobile-menu__contact">
+                <a href="tel:+34619293935" class="btn btn-danger btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Urgencias 24/7</a>
+                <a href="tel:+34937151691" class="btn btn-secondary--dark btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Oficina: 93 715 16 91</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="index.html">Inicio</a> → <span>Fabricación</span></nav>
+                <h1>Fabricación de Maquinaria a Medida</h1>
+                <p class="text-lead">Diseño y fabricación propia de soluciones industriales. La Serie RG 200 es nuestra referencia para el sector farmacéutico.</p>
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content section">
+            <div class="container">
+
+                <!-- 1. Ingeniería propia -->
+                <div class="animate-on-scroll">
+                    <h2>Ingeniería propia</h2>
+                    <p>Reiser Grafics cuenta con un departamento de ingeniería propio, equipado con las herramientas y la tecnología necesarias para diseñar y fabricar maquinaria industrial desde cero. Desde la concepción inicial del proyecto hasta la puesta en marcha en las instalaciones del cliente, controlamos cada fase del proceso.</p>
+                    <p>Nuestro taller de 1.000 m² alberga centros de mecanizado CNC de última generación, estaciones de soldadura TIG para acero inoxidable y aluminio, y un área de montaje eléctrico para la fabricación de cuadros de control IP65. Cada componente se fabrica con tolerancias de centésimas de milímetro, asegurando la máxima precisión y durabilidad.</p>
+                    <p>El equipo de diseño trabaja con software CAD/CAM profesional (SolidWorks, AutoCAD) para desarrollar modelos 3D y planos de fabricación. Cada proyecto incluye simulaciones de funcionamiento y validación de prototipos antes de iniciar la producción en serie.</p>
+                </div>
+
+                <!-- 2. Stats -->
+                <div class="stats-row animate-on-scroll">
+                    <div class="stat">
+                        <span class="stat__number">CAD</span>
+                        <span class="stat__label">Diseño CAD/CAM</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">CNC</span>
+                        <span class="stat__label">Mecanizado CNC</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">TIG</span>
+                        <span class="stat__label">Soldadura TIG</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">PLC</span>
+                        <span class="stat__label">Montaje eléctrico</span>
+                    </div>
+                </div>
+
+                <!-- 3. Serie RG 200 -->
+                <div class="animate-on-scroll">
+                    <h2>Serie RG 200 — Superponedor de papel</h2>
+                    <p>La Serie RG 200 es el producto estrella de Reiser Grafics: una máquina de superposición de papel diseñada específicamente para la fabricación de prospectos farmacéuticos multicapa. Esta máquina responde a una necesidad clave de la industria farmacéutica: la impresión de prospectos que deben contener una gran cantidad de información regulatoria en un espacio reducido.</p>
+
+                    <h3>Configuración de la máquina</h3>
+                    <p>La RG 200 es una máquina modular compuesta por 3 cuerpos principales:</p>
+                    <ul>
+                        <li><strong>Cuerpo 1 — Unidad de encolado en frío:</strong> Aplica adhesivo de forma precisa y uniforme sobre la banda de papel mediante un sistema de rodillos dosificadores con control de gramaje. El sistema de cola fría garantiza una unión limpia sin deformación del papel.</li>
+                        <li><strong>Cuerpo 2 — Superposición de papel:</strong> Realiza la superposición de 2 o 3 hojas de papel con registro preciso. Sistema de guiado de banda con corrección lateral automática y control de tensión mediante células de carga.</li>
+                        <li><strong>Cuerpo 3 — Rebobinador:</strong> Rebobina el material resultante en bobinas con diámetro y tensión controlados. Sistema de corte transversal para separación de bobinas acabadas.</li>
+                    </ul>
+
+                    <h3>Especificaciones técnicas</h3>
+                    <ul>
+                        <li>Ancho máximo de bobina: 500 mm</li>
+                        <li>Superposición: 2 o 3 hojas según configuración</li>
+                        <li>Control de tensión independiente en cada cuerpo</li>
+                        <li>Panel de control con PLC Siemens S7-1200 y pantalla HMI táctil</li>
+                        <li>Velocidad de producción regulable mediante variadores de frecuencia</li>
+                        <li>Diseñada para funcionamiento continuo con mínimo mantenimiento</li>
+                        <li>Cumplimiento normativo para entorno farmacéutico (GMP)</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Proceso de fabricación -->
+                <div class="animate-on-scroll">
+                    <h2>Proceso de fabricación</h2>
+                    <p>Cada máquina que sale de nuestro taller sigue un proceso de fabricación riguroso, desde el diseño hasta las pruebas finales.</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-box animate-on-scroll">
+                        <h3>Diseño e ingeniería</h3>
+                        <p>Desarrollo del proyecto en entorno CAD 3D con SolidWorks. Generación de planos de fabricación, listas de materiales (BOM) y especificaciones técnicas. Simulación de cinemática y esfuerzos mediante análisis FEA. Prototipado rápido de componentes críticos para validación funcional antes de la mecanización definitiva.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Mecanizado de precisión</h3>
+                        <p>Fabricación de componentes en nuestros centros de mecanizado CNC: torno CNC con control numérico Fanuc, fresadora de 3 y 5 ejes para piezas complejas, rectificadora cilíndrica y plana para acabados de alta precisión. Trabajamos con tolerancias de centésimas de milímetro en aceros, aluminios y materiales técnicos (Delrin, PTFE, bronce).</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Montaje y cableado</h3>
+                        <p>Fabricación de cuadros eléctricos IP65 con componentes Siemens, Schneider Electric y ABB. Programación de PLCs Siemens (S7-1200, S7-1500), configuración de variadores de frecuencia, cableado de sensores, encoders y actuadores. Protocolos de comunicación industrial Profinet y Modbus TCP para integración con sistemas SCADA.</p>
+                    </div>
+                    <div class="content-box animate-on-scroll">
+                        <h3>Pruebas y puesta en marcha</h3>
+                        <p>Control de calidad dimensional de todas las piezas mecanizadas. Pruebas de funcionamiento en vacío y con material real en nuestro taller. Verificación de parámetros eléctricos y neumáticos. Documentación técnica completa: manuales de operación, esquemas eléctricos y neumáticos, certificados de conformidad CE. Puesta en marcha en las instalaciones del cliente con formación del personal operador.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Fabricación bajo demanda -->
+                <div class="animate-on-scroll">
+                    <h2>Fabricación bajo demanda</h2>
+                    <p>Además de nuestra Serie RG 200, Reiser Grafics ofrece servicios de fabricación a medida para necesidades específicas de producción. Si su proceso productivo requiere una solución que no existe en el mercado, podemos diseñarla y fabricarla.</p>
+                    <p>Nuestras capacidades de fabricación bajo demanda incluyen:</p>
+                    <ul>
+                        <li>Diseño y fabricación de útiles y herramientas especiales para maquinaria existente</li>
+                        <li>Modificación y adaptación de equipos para nuevos formatos o materiales</li>
+                        <li>Fabricación de piezas de recambio descatalogadas mediante ingeniería inversa</li>
+                        <li>Desarrollo de automatismos y sistemas de control para líneas de producción</li>
+                        <li>Integración de sistemas de inspección por visión artificial</li>
+                        <li>Mecanizado de piezas bajo plano del cliente con tolerancias de centésimas</li>
+                    </ul>
+                    <p>Cada proyecto comienza con una reunión técnica para definir los requisitos, seguida de un estudio de viabilidad y presupuesto detallado. Trabajamos con plazos de entrega competitivos y mantenemos una comunicación constante con el cliente durante todo el proceso de fabricación.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Block -->
+        <section class="cta-block">
+            <div class="container">
+                <div class="cta-block__content animate-on-scroll">
+                    <h2>Hable con un ingeniero hoy mismo</h2>
+                    <p class="text-lead">Nuestro equipo de expertos en ingeniería mecánica y electrónica está a su disposición.</p>
+                    <div class="cta-block__buttons">
+                        <a href="tel:+34937151691" class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Llamar ahora
+                        </a>
+                        <a href="mailto:jamartinez@reisergrafics.es" class="btn btn-secondary--dark btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Enviar Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div>
+                        <svg class="footer__logo-svg" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="8" r="4" fill="#D32F2F"/>
+                            <circle cx="7" cy="20" r="4" fill="#D32F2F"/>
+                            <circle cx="7" cy="32" r="4" fill="#D32F2F"/>
+                            <text x="20" y="25" fill="#FFFFFF" font-family="Montserrat,sans-serif" font-weight="800" font-size="22" letter-spacing="0.5">REISER</text>
+                            <text x="20" y="41" fill="rgba(255,255,255,0.5)" font-family="Montserrat,sans-serif" font-weight="700" font-size="12" letter-spacing="3">GRAFICS</text>
+                        </svg>
+                        <p class="footer__address">P.I. Can Clapers, Pla de la Falguera 6<br>08181 Sentmenat (Barcelona)</p>
+                    </div>
+                    <div class="footer__contact-row">
+                        <a href="tel:+34937151691" class="footer__contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 93.715.16.91</a>
+                        <a href="tel:+34619293935" class="footer__contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> 619.29.39.35</a>
+                        <a href="mailto:jamartinez@reisergrafics.es" class="footer__email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> jamartinez@reisergrafics.es</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 Reiser Grafics S.L. Todos los derechos reservados.</p>
+                    <div class="footer__legal">
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                        <a href="privacidad.html">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

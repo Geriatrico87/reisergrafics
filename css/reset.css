@@ -1,0 +1,147 @@
+/* ============================================================
+   REISER GRAFICS — Modern CSS Reset (reset.css)
+   Based on Josh Comeau's + Andy Bell's modern reset
+   ============================================================ */
+
+/* ── Box Model Reset ────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Document ───────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+/* ── Body ───────────────────────────────────────────────────── */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* ── Media Elements ─────────────────────────────────────────── */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+img,
+picture,
+video {
+  height: auto;
+}
+
+/* ── Form Elements ──────────────────────────────────────────── */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ── Links ──────────────────────────────────────────────────── */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--blue, #0056B3);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Lists ──────────────────────────────────────────────────── */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+p {
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+/* ── Tables ─────────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ── Misc ───────────────────────────────────────────────────── */
+[hidden] {
+  display: none !important;
+}
+
+::selection {
+  background-color: var(--blue, #0056B3);
+  color: var(--white, #FFFFFF);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light, #F4F4F6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-mid, #E2E2E2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-dark, #888888);
+}

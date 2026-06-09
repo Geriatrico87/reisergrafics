@@ -1,0 +1,101 @@
+/* ============================================================
+   REISER GRAFICS — Design Tokens v2 (variables.css)
+   Premium B2B Industrial — Anti-Generic Design System
+   ============================================================ */
+
+:root {
+
+  /* ── Color Palette ────────────────────────────────────────── */
+  --white:        #FFFFFF;
+  --snow:         #FAFAFB;
+  --gray-100:     #F4F4F6;
+  --gray-200:     #EAEBEE;
+  --gray-300:     #DCDDE2;
+  --gray-400:     #B0B3BC;
+  --gray-500:     #888B97;
+  --gray-600:     #5F6270;
+  --gray-700:     #3D3F4A;
+  --carbon:       #222222;
+  --black:        #111111;
+  --deep-black:   #0A0A0C;
+
+  --blue:         #0056B3;
+  --blue-light:   #0068D6;
+  --blue-bright:  #0074E8;
+  --blue-dark:    #004494;
+  --blue-deep:    #003377;
+
+  --red:          #D32F2F;
+  --red-light:    #E53935;
+  --red-dark:     #B71C1C;
+
+  /* Semantic */
+  --color-text:         var(--carbon);
+  --color-text-muted:   var(--gray-500);
+  --color-text-subtle:  var(--gray-400);
+  --color-surface:      var(--white);
+  --color-surface-alt:  var(--gray-100);
+  --color-surface-card: var(--snow);
+  --color-border:       rgba(0, 0, 0, 0.06);
+  --color-border-hover: rgba(0, 86, 179, 0.18);
+
+  /* Metallic gradients for pill buttons */
+  --gradient-blue:   linear-gradient(180deg, #0068D6 0%, #004494 100%);
+  --gradient-blue-h: linear-gradient(180deg, #0074E8 0%, #0056B3 100%);
+  --gradient-red:    linear-gradient(180deg, #E53935 0%, #B71C1C 100%);
+  --gradient-red-h:  linear-gradient(180deg, #EF5350 0%, #D32F2F 100%);
+  --gradient-dark:   linear-gradient(180deg, #3D3F4A 0%, #222222 100%);
+
+  /* ── Typography ───────────────────────────────────────────── */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   clamp(1.15rem, 1vw + 0.75rem, 1.35rem);
+  --text-2xl:  clamp(1.35rem, 1.5vw + 0.75rem, 1.75rem);
+  --text-3xl:  clamp(1.6rem, 2vw + 0.75rem, 2.25rem);
+  --text-4xl:  clamp(1.85rem, 3vw + 0.5rem, 2.75rem);
+  --text-5xl:  clamp(2.15rem, 4vw + 0.5rem, 3.25rem);
+  --text-6xl:  clamp(2.5rem, 5vw, 4rem);
+
+  /* ── Spacing (8 px system) ─────────────────────────────────── */
+  --space-1:  0.5rem;
+  --space-2:  1rem;
+  --space-3:  1.5rem;
+  --space-4:  2rem;
+  --space-5:  2.5rem;
+  --space-6:  3rem;
+  --space-8:  4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  /* ── Radius ────────────────────────────────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 9999px;
+
+  /* ── Transitions ────────────────────────────────────────────── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease-out;
+
+  /* ── Z-index ────────────────────────────────────────────────── */
+  --z-base:    1;
+  --z-sticky:  500;
+  --z-overlay: 900;
+  --z-header:  1000;
+  --z-modal:   1100;
+
+  /* ── Container ──────────────────────────────────────────────── */
+  --container-max:     1280px;
+  --container-padding: clamp(1.25rem, 4vw, 2rem);
+
+  /* ── Header ─────────────────────────────────────────────────── */
+  --header-height: 72px;
+}
