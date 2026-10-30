@@ -1,0 +1,8 @@
+# Reiser Grafics S.L. — robots.txt
+# https://www.reisergrafics.es
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.reisergrafics.es/sitemap.xml
